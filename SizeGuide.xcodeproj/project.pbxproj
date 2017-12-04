@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73765D51FD4E3B200BCD4B8 /* WomanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73765D41FD4E3B200BCD4B8 /* WomanViewController.m */; };
+		C73765D81FD4E3CA00BCD4B8 /* ManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73765D71FD4E3CA00BCD4B8 /* ManViewController.m */; };
+		C73765DB1FD4E3F300BCD4B8 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73765DA1FD4E3F300BCD4B8 /* FirstTableViewController.m */; };
+		C73765DE1FD4E40D00BCD4B8 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73765DD1FD4E40D00BCD4B8 /* DetailTableViewController.m */; };
 		C755A4A61FCB17710076419F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C755A4A51FCB17710076419F /* AppDelegate.m */; };
 		C755A4A91FCB17710076419F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C755A4A81FCB17710076419F /* ViewController.m */; };
 		C755A4AC1FCB17710076419F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C755A4AA1FCB17710076419F /* Main.storyboard */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C73765D31FD4E3B200BCD4B8 /* WomanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WomanViewController.h; sourceTree = "<group>"; };
+		C73765D41FD4E3B200BCD4B8 /* WomanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WomanViewController.m; sourceTree = "<group>"; };
+		C73765D61FD4E3CA00BCD4B8 /* ManViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManViewController.h; sourceTree = "<group>"; };
+		C73765D71FD4E3CA00BCD4B8 /* ManViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManViewController.m; sourceTree = "<group>"; };
+		C73765D91FD4E3F300BCD4B8 /* FirstTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		C73765DA1FD4E3F300BCD4B8 /* FirstTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		C73765DC1FD4E40D00BCD4B8 /* DetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		C73765DD1FD4E40D00BCD4B8 /* DetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		C755A4A11FCB17710076419F /* SizeGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SizeGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C755A4A41FCB17710076419F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C755A4A51FCB17710076419F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +117,14 @@
 				C755A4A51FCB17710076419F /* AppDelegate.m */,
 				C755A4A71FCB17710076419F /* ViewController.h */,
 				C755A4A81FCB17710076419F /* ViewController.m */,
+				C73765D31FD4E3B200BCD4B8 /* WomanViewController.h */,
+				C73765D41FD4E3B200BCD4B8 /* WomanViewController.m */,
+				C73765D61FD4E3CA00BCD4B8 /* ManViewController.h */,
+				C73765D71FD4E3CA00BCD4B8 /* ManViewController.m */,
+				C73765D91FD4E3F300BCD4B8 /* FirstTableViewController.h */,
+				C73765DA1FD4E3F300BCD4B8 /* FirstTableViewController.m */,
+				C73765DC1FD4E40D00BCD4B8 /* DetailTableViewController.h */,
+				C73765DD1FD4E40D00BCD4B8 /* DetailTableViewController.m */,
 				C755A4AA1FCB17710076419F /* Main.storyboard */,
 				C755A4AD1FCB17710076419F /* Assets.xcassets */,
 				C755A4AF1FCB17710076419F /* LaunchScreen.storyboard */,
@@ -266,8 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C755A4A91FCB17710076419F /* ViewController.m in Sources */,
+				C73765D51FD4E3B200BCD4B8 /* WomanViewController.m in Sources */,
+				C73765DE1FD4E40D00BCD4B8 /* DetailTableViewController.m in Sources */,
+				C73765DB1FD4E3F300BCD4B8 /* FirstTableViewController.m in Sources */,
 				C755A4B41FCB17710076419F /* main.m in Sources */,
 				C755A4A61FCB17710076419F /* AppDelegate.m in Sources */,
+				C73765D81FD4E3CA00BCD4B8 /* ManViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +454,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 37A9GJ6523;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SizeGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.leeds.SizeGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -444,12 +471,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 37A9GJ6523;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SizeGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.leeds.SizeGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
