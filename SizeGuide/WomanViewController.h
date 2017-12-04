@@ -10,4 +10,6 @@
 
 @interface WomanViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
 @end
