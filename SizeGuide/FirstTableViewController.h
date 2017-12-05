@@ -10,4 +10,7 @@
 
 @interface FirstTableViewController : UITableViewController
 
+@property (nonatomic, strong)NSString *sex;
+@property (nonatomic, assign)NSInteger type;//1,2,3
+
 @end
