@@ -10,4 +10,9 @@
 
 @interface DetailTableViewController : UITableViewController
 
+@property (nonatomic, strong)NSString *sex;//woman,man
+@property (nonatomic, assign)NSInteger type;//1,2,3
+@property (nonatomic, assign)NSInteger sizeType;//1,2,3
+
 @end
+
