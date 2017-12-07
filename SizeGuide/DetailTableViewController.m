@@ -83,14 +83,17 @@
 
 #pragma mark - Table view data source
 
+//Number of section
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
+//The number of rows in a section.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 2;
 }
 
+// Cells difinition.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSInteger temRow = 0;
@@ -197,6 +200,5 @@
  */
 
 @end
-
 
 
