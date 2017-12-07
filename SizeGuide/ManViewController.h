@@ -10,6 +10,7 @@
 
 @interface ManViewController : UIViewController
 
+//Inset a picker view for the woman department in Tab Bar.
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @end

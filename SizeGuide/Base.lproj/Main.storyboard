@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khf-wH-DHS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khf-wH-DHS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAG-Es-Ui3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="-525"/>
+            <point key="canvasLocation" x="856.79999999999995" y="-525.78710644677665"/>
         </scene>
         <!--SizeGuide-->
         <scene sceneID="8GF-ob-baI">
@@ -432,17 +432,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-hK-j4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-854" y="-524"/>
+            <point key="canvasLocation" x="-855.20000000000005" y="-524.8875562218891"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Man" width="16" height="16"/>
-        <image name="Woman" width="16" height="16"/>
+        <image name="Man" width="44" height="44"/>
+        <image name="Woman" width="72" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a6s-RF-EWV"/>
+        <segue reference="Fob-Db-K6V"/>
         <segue reference="moR-2h-B0S"/>
-        <segue reference="Utp-QT-EAY"/>
-        <segue reference="9pd-Od-QK9"/>
+        <segue reference="iYO-1W-j9R"/>
+        <segue reference="3Th-zo-4ut"/>
     </inferredMetricsTieBreakers>
 </document>

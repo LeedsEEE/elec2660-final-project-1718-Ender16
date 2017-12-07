@@ -9,6 +9,7 @@
 #import "FirstTableViewController.h"
 #import "DetailTableViewController.h"
 
+//Set the number of clothing sizes.
 @interface FirstTableViewController (){
     NSArray *arr1;
     NSArray *arr2;
@@ -29,6 +30,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //Input the size of the men's 3 types of clothing.
     if ([self.sex isEqualToString:@"man"]) {
         //MAN
         if (_type == 1) {
@@ -45,6 +48,7 @@
             arr2 = @[@"SIZE\n",@"XS",@"S",@"M",@"L",@"XL",@"XXL",@"XXXL"];
         }
     }
+    //Input the size of the woman's 3 types of clothing.
     else{
         //WOMAN
         if (_type == 1) {
@@ -62,7 +66,7 @@
     }
     selectRow = 0;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
+    //Set a return button and the APP will return to the previous page when the user presses it.
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
                                              initWithTitle:@"Back"
                                              style:UIBarButtonItemStylePlain
@@ -77,14 +81,17 @@
 
 #pragma mark - Table view data source
 
+//There are only 1 Table View.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
+//Set the number of rows.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return arr2.count;
 }
 
+//Set the number of cells to display per row.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     

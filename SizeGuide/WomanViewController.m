@@ -9,6 +9,7 @@
 #import "WomanViewController.h"
 #import "FirstTableViewController.h"
 
+//Let the users can choose the type of clothes.
 @interface WomanViewController ()<UIPickerViewDelegate,UIPickerViewDataSource>
 {
     NSInteger selectedType;
@@ -25,6 +26,7 @@
     self.pickerView.dataSource = self;
     selectedType = 0;
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30]} forState:UIControlStateNormal];
+    //Set a return button and the APP will return to the previous page when the user presses it.
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
                                              initWithTitle:@"Back"
                                              style:UIBarButtonItemStylePlain
@@ -32,6 +34,7 @@
                                              action:nil];
 }
 
+//Let the users have 3 chooses by Picker View for woman's clothes.
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"FirstTableViewController"]) {
         FirstTableViewController *firtsVC = (FirstTableViewController *)segue.destinationViewController;
@@ -53,6 +56,7 @@
     }
 }
 
+//After the uses choose each type,they can press a confirm bottom, the APP will go to the corresponding pages to display all sizes of this type clothes.
 - (IBAction)pushAction:(id)sender {
     if (selectedType == 0) {
         [self performSegueWithIdentifier:@"FirstTableViewController" sender:nil];
@@ -65,6 +69,7 @@
     }
 }
 
+//Tell the user the type of clothing that each row represents
 #pragma mark Picker View Delegate Methods
 -(NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     
@@ -81,19 +86,23 @@
     return coordinate;
 }
 
+//Set the type of the selection to correspond to the row.
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     selectedType = row;
 }
 
 #pragma mark Picker View Data Source Methods
+//There is only 1 column for the Picker View.
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
 
+//There are 3 rows for the column.
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     return 3;
 }
 
+//Set display view.
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
     UILabel* pickerLabel = (UILabel*)view;
     if (!pickerLabel){
