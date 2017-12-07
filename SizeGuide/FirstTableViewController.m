@@ -95,6 +95,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
+    //Configure the cell for woman.
     if (_type == 1 && [_sex isEqualToString:@"woman"]) {
         UILabel *label1 = [cell.contentView viewWithTag:1000];
         UILabel *label2 = [cell.contentView viewWithTag:1001];
@@ -118,6 +119,7 @@
             label4.hidden = NO;
         }
     }
+    //Configure the cell for man.
     else{
         UILabel *label1 = [cell.contentView viewWithTag:2000];
         UILabel *label2 = [cell.contentView viewWithTag:2001];
@@ -146,6 +148,7 @@
     return cell;
 }
 
+//Connect the content of this page with the next page.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {

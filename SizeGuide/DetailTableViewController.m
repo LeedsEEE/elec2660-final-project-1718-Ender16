@@ -8,6 +8,8 @@
 
 #import "DetailTableViewController.h"
 
+
+//Details of the size definition
 @interface DetailTableViewController ()
 {
     NSArray *arr1;
@@ -29,6 +31,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    //Input information about all sizes of all types of clothing for man.
     if ([self.sex isEqualToString:@"man"]) {
         //MAN
         if (_type == 1) {
@@ -50,6 +53,8 @@
             arr4 = @[@"ARM\n",@"33.2in\n84.5cm",@"33.8in\n86cm",@"34.4in\n87.5cm",@"35in\n89cm",@"35.6in\n90.5cm",@"36.2in\n92cm",@"36.8in\n93.5cm"];
         }
     }
+    
+    //Input information about all sizes of all types of clothing for woman.
     else{
         //WOMAN
         if (_type == 1) {
